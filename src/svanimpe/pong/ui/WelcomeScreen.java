@@ -31,7 +31,7 @@ public class WelcomeScreen extends Pane
 //        });
 //        header.getStyleClass().add("header");
         
-        Text info = new Text("use the arrow keys to move\npress p to pause\n\npress enter to start\npress escape to quit");
+        Text info = new Text("utilitza les fletches per moure't\nPresiona P per pausar\n\nPresiona enter per començar\npresiona espai per sortir");
         info.boundsInLocalProperty().addListener(observable ->
         {
             /*

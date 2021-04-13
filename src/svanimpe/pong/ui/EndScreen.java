@@ -27,11 +27,8 @@ public class EndScreen extends Pane
     {
         header.boundsInLocalProperty().addListener(observable ->
         {
-            /*
-             * When using CSS, the width and height (with CSS applied) aren't available right away.
-             * Therefore, we listen for changes and update the position once the width and height
-             * are available.
-             */
+
+
             header.setTranslateX((WIDTH - header.getBoundsInLocal().getWidth()) / 2); /* Centered. */
             header.setTranslateY(TEXT_MARGIN_TOP_BOTTOM);
         });
@@ -40,11 +37,7 @@ public class EndScreen extends Pane
         Text info = new Text("press enter to restart\npress escape to quit");
         info.boundsInLocalProperty().addListener(observable ->
         {
-            /*
-             * When using CSS, the width and height (with CSS applied) aren't available right away.
-             * Therefore, we listen for changes and update the position once the width and height
-             * are available.
-             */
+
             info.setTranslateX((WIDTH - info.getBoundsInLocal().getWidth()) / 2); /* Centered. */
             info.setTranslateY(HEIGHT - TEXT_MARGIN_TOP_BOTTOM - info.getBoundsInLocal().getHeight());
         });
